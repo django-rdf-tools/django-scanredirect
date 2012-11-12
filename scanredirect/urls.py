@@ -3,11 +3,16 @@
 from django.conf.urls import patterns, include
 
 urlpatterns = patterns('',
-    (r'^phpMyAdmin', 'scanredirect.views.back_home'),
-    (r'^admin/phpMyAdmin', 'scanredirect.views.back_home'),
-    (r'^admin/phpmyadmin', 'scanredirect.views.back_home'),
-    (r'^admin/php-myadmin', 'scanredirect.views.back_home'),
-    (r'^admin/php-my-admin', 'scanredirect.views.back_home'),
+
+    (r'main.php$', 'scanredirect.views.back_home'),
+    (r'index.php$', 'scanredirect.views.back_home'),
+
+    (r'phpMyAdmin', 'scanredirect.views.back_home'),
+    (r'phpMyAdmin', 'scanredirect.views.back_home'),
+    (r'phpmyadmin', 'scanredirect.views.back_home'),
+    (r'phpadmin', 'scanredirect.views.back_home'),
+    (r'php-myadmin', 'scanredirect.views.back_home'),
+    (r'php-my-admin', 'scanredirect.views.back_home'),
 
     (r'^admin/phpmanager/', 'scanredirect.views.back_home'),
     (r'^admin/pma2005/', 'scanredirect.views.back_home'),
@@ -17,9 +22,10 @@ urlpatterns = patterns('',
     (r'^admin/p/m/a/', 'scanredirect.views.back_home'),
     (r'^admin/modules/', 'scanredirect.views.back_home'),
     (r'^admin/pMA/', 'scanredirect.views.back_home'),
-    (r'^admin/main.php', 'scanredirect.views.back_home'),
+    (r'^admin/pma/', 'scanredirect.views.back_home'),
     (r'^admin/web/', 'scanredirect.views.back_home'),
     (r'^admin/db/', 'scanredirect.views.back_home'),
+
 
     (r'sqladmin/', 'scanredirect.views.back_home'),
     (r'sysadmin/', 'scanredirect.views.back_home'),
@@ -35,9 +41,12 @@ urlpatterns = patterns('',
     (r'myadmin/', 'scanredirect.views.back_home'),
     (r'dbadmin/', 'scanredirect.views.back_home'),
 
+    (r'^db/', 'scanredirect.views.back_home'),
+    (r'^database/', 'scanredirect.views.back_home'),
     (r'^components/', 'scanredirect.views.back_home'),
     (r'^administrator/', 'scanredirect.views.back_home'),
     (r'^xampplite/', 'scanredirect.views.back_home'),
+    (r'^xampp/', 'scanredirect.views.back_home'),
     (r'^MyAdmin/', 'scanredirect.views.back_home'),
 
 )
